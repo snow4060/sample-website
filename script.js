@@ -1,6 +1,4 @@
-console.log("hello world")
-
-import humanNames from 'human-names';
+import { allRandom } from 'human-names';
 
 document.body.onload = generateElements
 
@@ -15,7 +13,7 @@ function generateElements(){
 function addElements(){
     if(Math.random() < 0.3){
         const newDiv = document.createElement("b") //about 30% chance of bold
-        var str = "e"
+        var str = allRandom()
         const newContent = document.createTextNode(str)
         newDiv.appendChild(newContent)
         document.body.appendChild(newDiv)
@@ -24,7 +22,7 @@ function addElements(){
     }
     else{
         const newDiv = document.createElement("p")
-        var str = "e"
+        var str = allRandom()
         const newContent = document.createTextNode(str)
         newDiv.appendChild(newContent)
         document.body.appendChild(newDiv)
