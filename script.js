@@ -1,6 +1,6 @@
 console.log("hello world")
 
-const humanNames = require('human-names');
+import humanNames from 'human-names';
 
 document.body.onload = generateElements
 
