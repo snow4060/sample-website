@@ -1,6 +1,6 @@
 //import { allRandom } from 'human-names';
 
-//document.body.onload = generateElements
+document.ready = generateElements
 
 function generateElements(){
     let amount = Math.floor(Math.random() * 100)   
