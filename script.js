@@ -14,9 +14,5 @@ function addElements(){
     const newContent = document.createTextNode(str)
     newDiv.appendChild(newContent)
     const currentDiv = document.getElementById("parentDiv")
-    try{
-        document.body.insertBefore(newDiv, currentDiv)
-    }
-    catch(err){
-    }
+    document.body.appendChild(newDiv)
 }
